@@ -1,0 +1,151 @@
+.title {
+    font-family: Montserrat;
+    text-align: center;
+}
+
+@media only screen and (min-width:1200px) {
+    .tracking-in-expand {
+        -webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.5s both;
+        animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.5s both;
+    }
+}
+
+@-webkit-keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    60% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    70% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(-22vh);
+        transform: translateY(-22vh);
+    }
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    60% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    70% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(-22vh);
+        transform: translateY(-22vh);
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    .hi-slide {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    .hi-slide {
+        position: relative;
+        width: 792px;
+        height: 292px;
+        margin: 115px auto;
+    }
+
+    .hi-slide .hi-next,
+    .hi-slide .hi-prev {
+        position: absolute;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+        margin-top: -20px;
+        border-radius: 50px;
+        line-height: 40px;
+        text-align: center;
+        cursor: pointer;
+        background-color: #fff;
+        color: black;
+        transition: all 0.6s;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .hi-slide .hi-next:hover,
+    .hi-slide .hi-prev:hover {
+        opacity: 1;
+        background-color: #fff;
+    }
+
+    .hi-slide .hi-prev {
+        left: -60px;
+    }
+
+    .hi-slide .hi-prev::before {
+        content: '<';
+    }
+
+    .hi-slide .hi-next {
+        right: -60px;
+    }
+
+    .hi-slide .hi-next::before {
+        content: '>';
+    }
+
+    .hi-slide>ul {
+        list-style: none;
+        position: relative;
+        width: 100%;
+        height: 292px;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .hi-slide>ul>li {
+        overflow: hidden;
+        position: absolute;
+        z-index: 0;
+        left: 377px;
+        top: 146px;
+        width: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 3px solid #fff;
+        background-color: #333;
+        cursor: pointer;
+    }
+
+    .hi-slide>ul>li>img {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+    }
+}

@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Jaipur-Ghumo</title>
+
+
+    <style>
+        .food button:hover {
+            background-color: blue;
+            color: white;
+        }
+    
+        @media only screen and (max-width:420px) {
+            .first-img {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark py-4">
+
+        <div class="container">
+            <a href="/"><img src="images/logo.webp" alt="" style="height: 50px; width: 50px; border-radius: 50%;"></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link active px-4 text-secondary " aria-current="page" href="#">Home</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link  px-3 text-white " aria-current="page" href="aboutjaipur.html">About
+                            Jaipur</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link  px-3 text-white " aria-current="page" href="gallery.html">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link  px-3 text-white " aria-current="page" href="review.html">Guest Reviews</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link  px-3 text-white " aria-current="page" href="/contact.html">Contact Us</a>
+                    </li>
+                </ul>
+
+            </div>
+
+
+        </div>
+    </nav>
+
+
+        <div class="first-img col-bg" style=" padding: 15px; margin: 20px 0; ">
+            <img src="images/foodhome.jpg" alt="" width="100%">
+        
+        </div>
+        
+        
+        
+        <div class=" container "
+            style="background-image: url();   background-repeat: repeat; background-size: cover; background-color: aliceblue;">
+        
+            <div class=" " style="margin: 30px 0; padding: 30px 0;">
+        
+                <div class="row food text-center" style="margin: 20px 0; ">
+                    <div class="col-sm-6 col-md-3 north " style="margin:20px 0;">
+                        <button type="button" class="btn btn-secondary">
+                            <a href="#north" style="text-decoration: none; color: white;">North
+                                Indian</a>
+                        </button>
+                    </div>
+                    <div class="col-sm-6 col-md-3 south" style="margin:20px 0;"><button type="button"
+                            class="btn btn-secondary"><a href="#south" style="text-decoration: none; color: white;">South
+                                Indian</a></button></div>
+                    <div class="col-sm-6 col-md-3 chinese" style="margin:20px 0;"><button type="button"
+                            class="btn btn-secondary"><a href="#chinese"
+                                style="text-decoration: none; color: white;">Chinese</a></button>
+                    </div>
+                    <div class="col-sm-6 col-md-3 continental" style="margin:20px 0;"><button type="button"
+                            class="btn btn-secondary"><a href="#continental"
+                                style="text-decoration: none; color: white;">Continental</a></button>
+                    </div>
+        
+                </div>
+        
+                <div id="north">
+                    <h2 class="text-center" style="margin: 60px 0  ;">-----North Indian Food----- </h2>
+                    <div>
+                        <div class="row" style="margin: 40px 0;">
+                            <div class="col-sm-3">
+                                <div class="col-bg">
+                                    <img src="images/food/gulabinagari.jpg" alt="" width="100%">
+        
+                                </div>
+        
+                            </div>
+        
+                            <div class="col-sm-9  ">
+                                <div>
+                                    <h2>Gulabi Nagari</h2>
+                                    <p><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;Bani park, Jaipur</p>
+                                    <p><i class="fa-solid fa-database"></i>&nbsp;&nbsp;₹ 1200 for two approx | North Indian,
+                                        Chinese</p>
+                                    <p><i class="fa-solid fa-clock"></i>&nbsp;&nbsp;Open from 11:00 AM - 11:00 PM</p>
+                                    <p><i class="fa-solid fa-location-crosshairs"></i>&nbsp;&nbsp;<a
+                                            style="text-decoration: none;" target="_blank"
+                                            href="https://www.google.com/maps/dir//26.9293333,75.7885482/@26.9290617,75.7188094,12z/data=!3m1!4b1!4m4!4m3!1m1!4e2!1m0">See
+                                            Location</p></a>
+                                    <p>Restaurant Features</p>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons.flaticon.com/png/512/2801/premium/2801846.png?token=exp=1660243888~hmac=3ab0d611d17ba03bd8a4348049bcb321"
+                                                    alt=""> &nbsp;&nbsp;Home Delivery
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/82/82436.png"
+                                                    alt="">&nbsp;&nbsp;Outdoor
+                                                Seating
+                                            </p>
+        
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons.flaticon.com/png/512/4784/premium/4784068.png?token=exp=1660244136~hmac=3f16d09f35b4f587991a7ae5ed2fe384"
+                                                    alt="">&nbsp;&nbsp;Air Condition
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/3081/3081098.png"
+                                                    alt="">&nbsp;&nbsp;Take Away
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-4">
+        
+        
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/7850/7850613.png"
+                                                    alt="">&nbsp;&nbsp;Pure Veg
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/128/3282/3282468.png"
+                                                    alt="">&nbsp;&nbsp;Kids Allowed
+                                            </p>
+                                        </div>
+                                    </div>
+        
+        
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="row" style="margin: 40px 0;">
+                            <div class="col-sm-3">
+                                <div class="col-bg">
+                                    <img src="images/food/rj-14.jpg" alt="" width="100%">
+        
+                                </div>
+        
+                            </div>
+        
+                            <div class="col-sm-9  ">
+                                <div>
+                                    <h2>RJ 14</h2>
+                                    <p><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;Ajmer Highway, Jaipur</p>
+                                    <p><i class="fa-solid fa-database"></i>&nbsp;&nbsp;₹ 600 for two approx | North Indian
+                                        South Indian</p>
+                                    <p><i class="fa-solid fa-clock"></i>&nbsp;&nbsp;Open from 12:00 PM - 11:00 PM</p>
+                                    <p><i class="fa-solid fa-location-crosshairs"></i>&nbsp;&nbsp;<a
+                                            style="text-decoration: none;" target="_blank"
+                                            href="https://www.google.com/maps/dir//26.8953078,75.7502834/@26.8954236,75.6804067,12z/data=!3m1!4b1!4m4!4m3!1m1!4e2!1m0">See
+                                            Location</p></a>
+                                    <p>Restaurant Features</p>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons.flaticon.com/png/512/2801/premium/2801846.png?token=exp=1660243888~hmac=3ab0d611d17ba03bd8a4348049bcb321"
+                                                    alt=""> &nbsp;&nbsp;Home Delivery
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/82/82436.png"
+                                                    alt="">&nbsp;&nbsp;Outdoor
+                                                Seating
+                                            </p>
+        
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons.flaticon.com/png/512/4784/premium/4784068.png?token=exp=1660244136~hmac=3f16d09f35b4f587991a7ae5ed2fe384"
+                                                    alt="">&nbsp;&nbsp;Air Condition
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/3081/3081098.png"
+                                                    alt="">&nbsp;&nbsp;Take Away
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-4">
+        
+        
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/7850/7850613.png"
+                                                    alt="">&nbsp;&nbsp;Pure Veg
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/128/3282/3282468.png"
+                                                    alt="">&nbsp;&nbsp;Kids Allowed
+                                            </p>
+                                        </div>
+                                    </div>
+        
+        
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="row" style="margin: 40px 0;">
+                            <div class="col-sm-3">
+                                <div class="col-bg">
+                                    <img src="images/food/great kabab.jpg" alt="" width="100%">
+        
+                                </div>
+        
+                            </div>
+        
+                            <div class="col-sm-9  ">
+                                <div>
+                                    <h2>The Great Kabab Factory</h2>
+                                    <p><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;Radisson Jaipur City Center,
+                                        Jaipur</p>
+                                    <p><i class="fa-solid fa-database"></i>&nbsp;&nbsp;₹ 1700 for two approx | North Indian
+                                    </p>
+                                    <p><i class="fa-solid fa-clock"></i>&nbsp;&nbsp;Open from 12:30 PM - 03:30 PM</p>
+                                    <p><i class="fa-solid fa-location-crosshairs"></i>&nbsp;&nbsp;<a
+                                            style="text-decoration: none;" target="_blank"
+                                            href="https://www.google.com/maps/dir/?api=1&destination=26.91962950,75.79456720">See
+                                            Location</p></a>
+                                    <p>Restaurant Features</p>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons.flaticon.com/png/512/2801/premium/2801846.png?token=exp=1660243888~hmac=3ab0d611d17ba03bd8a4348049bcb321"
+                                                    alt=""> &nbsp;&nbsp;Home Delivery
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/82/82436.png"
+                                                    alt="">&nbsp;&nbsp;Outdoor
+                                                Seating
+                                            </p>
+        
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons.flaticon.com/png/512/4784/premium/4784068.png?token=exp=1660244136~hmac=3f16d09f35b4f587991a7ae5ed2fe384"
+                                                    alt="">&nbsp;&nbsp;Air Condition
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/3081/3081098.png"
+                                                    alt="">&nbsp;&nbsp;Take Away
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-4">
+        
+        
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/7850/7850613.png"
+                                                    alt="">&nbsp;&nbsp;Pure Veg
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/128/3282/3282468.png"
+                                                    alt="">&nbsp;&nbsp;Kids Allowed
+                                            </p>
+                                        </div>
+                                    </div>
+        
+        
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="row" style="margin: 40px 0;">
+                            <div class="col-sm-3">
+                                <div class="col-bg">
+                                    <img src="images/food/spicecourt.jpg" alt="" width="100%">
+        
+                                </div>
+                            </div>
+        
+                            <div class="col-sm-9  ">
+                                <div>
+                                    <h2>Spice Court</h2>
+                                    <p><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;Civil Lines, Jaipur</p>
+                                    <p><i class="fa-solid fa-database"></i>&nbsp;&nbsp;₹ 800 for two approx | Chinese North
+                                        Indian</p>
+                                    <p><i class="fa-solid fa-clock"></i>&nbsp;&nbsp;Open from 12:00 PM - 10:30 PM</p>
+                                    <p><i class="fa-solid fa-location-crosshairs"></i>&nbsp;&nbsp;<a
+                                            style="text-decoration: none;" target="_blank"
+                                            href="https://www.google.com/maps/dir/?api=1&destination=26.91085460,75.78891200">See
+                                            Location</p></a>
+                                    <p>Restaurant Features</p>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons.flaticon.com/png/512/2801/premium/2801846.png?token=exp=1660243888~hmac=3ab0d611d17ba03bd8a4348049bcb321"
+                                                    alt=""> &nbsp;&nbsp;Home Delivery
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/82/82436.png"
+                                                    alt="">&nbsp;&nbsp;Outdoor
+                                                Seating
+                                            </p>
+        
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons.flaticon.com/png/512/4784/premium/4784068.png?token=exp=1660244136~hmac=3f16d09f35b4f587991a7ae5ed2fe384"
+                                                    alt="">&nbsp;&nbsp;Air Condition
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/3081/3081098.png"
+                                                    alt="">&nbsp;&nbsp;Take Away
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-4">
+        
+        
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/7850/7850613.png"
+                                                    alt="">&nbsp;&nbsp;Pure Veg
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/128/3282/3282468.png"
+                                                    alt="">&nbsp;&nbsp;Kids Allowed
+                                            </p>
+                                        </div>
+                                    </div>
+        
+        
+                                </div>
+                            </div>
+                        </div>
+        
+        
+                    </div>
+                </div>
+        
+        
+                <div id="south">
+                    <h2 class="text-center" style="margin: 60px 0  ;">-----South Indian Food----- </h2>
+                    <div>
+                        <div class="row" style="margin: 40px 0;">
+                            <div class="col-sm-3">
+                                <div class="col-bg">
+                                    <img src="images/food/motu ram.jpg" alt="" width="100%">
+        
+                                </div>
+        
+                            </div>
+        
+                            <div class="col-sm-9  ">
+                                <div>
+                                    <h2>Sri Motu Ram Prasadam</h2>
+                                    <p><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;C Scheme, Jaipur</p>
+                                    <p><i class="fa-solid fa-database"></i>&nbsp;&nbsp;₹ 800 for two approx | Indian South
+                                        Indian</p>
+                                    <p><i class="fa-solid fa-clock"></i>&nbsp;&nbsp;Open from 11:00 AM - 5:00 PM</p>
+                                    <p><i class="fa-solid fa-location-crosshairs"></i>&nbsp;&nbsp;<a
+                                            style="text-decoration: none;" target="_blank"
+                                            href="https://www.google.com/maps/dir/26.8634705,75.81852/26.906758,75.800762/@26.8810438,75.7888096,14z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0">See
+                                            Location</p></a>
+                                    <p>Restaurant Features</p>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons.flaticon.com/png/512/2801/premium/2801846.png?token=exp=1660243888~hmac=3ab0d611d17ba03bd8a4348049bcb321"
+                                                    alt=""> &nbsp;&nbsp;Home Delivery
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/82/82436.png"
+                                                    alt="">&nbsp;&nbsp;Outdoor
+                                                Seating
+                                            </p>
+        
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons.flaticon.com/png/512/4784/premium/4784068.png?token=exp=1660244136~hmac=3f16d09f35b4f587991a7ae5ed2fe384"
+                                                    alt="">&nbsp;&nbsp;Air Condition
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/3081/3081098.png"
+                                                    alt="">&nbsp;&nbsp;Take Away
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-4">
+        
+        
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/7850/7850613.png"
+                                                    alt="">&nbsp;&nbsp;Pure Veg
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/128/3282/3282468.png"
+                                                    alt="">&nbsp;&nbsp;Kids Allowed
+                                            </p>
+                                        </div>
+                                    </div>
+        
+        
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="row" style="margin: 40px 0;">
+                            <div class="col-sm-3">
+                                <div class="col-bg">
+                                    <img src="images/food/sankalp.jpg" alt="" width="100%">
+        
+                                </div>
+        
+                            </div>
+        
+                            <div class="col-sm-9  ">
+                                <div>
+                                    <h2>Sankalp</h2>
+                                    <p><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;Vaishali Nagar, Jaipur</p>
+                                    <p><i class="fa-solid fa-database"></i>&nbsp;&nbsp;₹ 650 for two approx | South Indian
+                                    </p>
+                                    <p><i class="fa-solid fa-clock"></i>&nbsp;&nbsp;Open from 11:00 AM - 11:00 PM</p>
+                                    <p><i class="fa-solid fa-location-crosshairs"></i>&nbsp;&nbsp;<a
+                                            style="text-decoration: none;" target="_blank"
+                                            href="https://www.google.com/maps/dir/26.8634705,75.81852/26.8969129,75.752111/@26.8750797,75.7497071,13z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0">See
+                                            Location</p></a>
+                                    <p>Restaurant Features</p>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons.flaticon.com/png/512/2801/premium/2801846.png?token=exp=1660243888~hmac=3ab0d611d17ba03bd8a4348049bcb321"
+                                                    alt=""> &nbsp;&nbsp;Home Delivery
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/82/82436.png"
+                                                    alt="">&nbsp;&nbsp;Outdoor
+                                                Seating
+                                            </p>
+        
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons.flaticon.com/png/512/4784/premium/4784068.png?token=exp=1660244136~hmac=3f16d09f35b4f587991a7ae5ed2fe384"
+                                                    alt="">&nbsp;&nbsp;Air Condition
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/3081/3081098.png"
+                                                    alt="">&nbsp;&nbsp;Take Away
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-4">
+        
+        
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/7850/7850613.png"
+                                                    alt="">&nbsp;&nbsp;Pure Veg
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/128/3282/3282468.png"
+                                                    alt="">&nbsp;&nbsp;Kids Allowed
+                                            </p>
+                                        </div>
+                                    </div>
+        
+        
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="row" style="margin: 40px 0;">
+                            <div class="col-sm-3">
+                                <div class="col-bg">
+                                    <img src="images/food/shivsagar.jpg" alt="" width="100%">
+        
+                                </div>
+        
+                            </div>
+        
+                            <div class="col-sm-9  ">
+                                <div>
+                                    <h2>Shiv Sagar Cafe</h2>
+                                    <p><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;Raja Park, Jaipur</p>
+                                    <p><i class="fa-solid fa-database"></i>&nbsp;&nbsp;₹ 300 for two approx | South Indian
+                                    </p>
+                                    <p><i class="fa-solid fa-clock"></i>&nbsp;&nbsp;Open from 01:00 PM - 11:00 PM</p>
+                                    <p><i class="fa-solid fa-location-crosshairs"></i>&nbsp;&nbsp;<a
+                                            style="text-decoration: none;" target="_blank"
+                                            href="https://www.google.com/maps/dir/?api=1&destination=26.89553130,75.82639900">See
+                                            Location</p></a>
+                                    <p>Restaurant Features</p>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons.flaticon.com/png/512/2801/premium/2801846.png?token=exp=1660243888~hmac=3ab0d611d17ba03bd8a4348049bcb321"
+                                                    alt=""> &nbsp;&nbsp;Home Delivery
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/82/82436.png"
+                                                    alt="">&nbsp;&nbsp;Outdoor
+                                                Seating
+                                            </p>
+        
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons.flaticon.com/png/512/4784/premium/4784068.png?token=exp=1660244136~hmac=3f16d09f35b4f587991a7ae5ed2fe384"
+                                                    alt="">&nbsp;&nbsp;Air Condition
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/3081/3081098.png"
+                                                    alt="">&nbsp;&nbsp;Take Away
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-4">
+        
+        
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/7850/7850613.png"
+                                                    alt="">&nbsp;&nbsp;Pure Veg
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/128/3282/3282468.png"
+                                                    alt="">&nbsp;&nbsp;Kids Allowed
+                                            </p>
+                                        </div>
+                                    </div>
+        
+        
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="row" style="margin: 40px 0;">
+                            <div class="col-sm-3">
+                                <div class="col-bg">
+                                    <img src="images/food/doosa.jpg" alt="" width="100%">
+        
+                                </div>
+                            </div>
+        
+                            <div class="col-sm-9  ">
+                                <div>
+                                    <h2>Doosaa Woosaa & More</h2>
+                                    <p><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;C Scheme, Jaipur</p>
+                                    <p><i class="fa-solid fa-database"></i>&nbsp;&nbsp;₹ 300 for two approx | South Indian
+                                    </p>
+                                    <p><i class="fa-solid fa-clock"></i>&nbsp;&nbsp;Open from 12:00 PM - 11:30 PM</p>
+                                    <p><i class="fa-solid fa-location-crosshairs"></i>&nbsp;&nbsp;<a
+                                            style="text-decoration: none;" target="_blank"
+                                            href="https://www.google.com/maps/dir/?api=1&destination=26.90114000,75.78806300">See
+                                            Location</p></a>
+                                    <p>Restaurant Features</p>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons.flaticon.com/png/512/2801/premium/2801846.png?token=exp=1660243888~hmac=3ab0d611d17ba03bd8a4348049bcb321"
+                                                    alt=""> &nbsp;&nbsp;Home Delivery
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/82/82436.png"
+                                                    alt="">&nbsp;&nbsp;Outdoor
+                                                Seating
+                                            </p>
+        
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons.flaticon.com/png/512/4784/premium/4784068.png?token=exp=1660244136~hmac=3f16d09f35b4f587991a7ae5ed2fe384"
+                                                    alt="">&nbsp;&nbsp;Air Condition
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/3081/3081098.png"
+                                                    alt="">&nbsp;&nbsp;Take Away
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-4">
+        
+        
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/7850/7850613.png"
+                                                    alt="">&nbsp;&nbsp;Pure Veg
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/128/3282/3282468.png"
+                                                    alt="">&nbsp;&nbsp;Kids Allowed
+                                            </p>
+                                        </div>
+                                    </div>
+        
+        
+                                </div>
+                            </div>
+                        </div>
+        
+        
+                    </div>
+                </div>
+        
+                <div id="chinese">
+                    <h2 class="text-center" style="margin: 60px 0  ;">-----Chinese Food----- </h2>
+                    <div>
+                        <div class="row" style="margin: 40px 0;">
+                            <div class="col-sm-3">
+                                <div class="col-bg">
+                                    <img src="images/food/chineseking.jpg" alt="" width="100%">
+        
+                                </div>
+        
+                            </div>
+        
+                            <div class="col-sm-9  ">
+                                <div>
+                                    <h2>Chinese King</h2>
+                                    <p><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;Malviya Nagar, Jaipur</p>
+                                    <p><i class="fa-solid fa-database"></i>&nbsp;&nbsp;₹ 250 for two approx | Chinese</p>
+                                    <p><i class="fa-solid fa-clock"></i>&nbsp;&nbsp;Open from 11:00 AM - 11:00 PM</p>
+                                    <p><i class="fa-solid fa-location-crosshairs"></i>&nbsp;&nbsp;<a
+                                            style="text-decoration: none;" target="_blank"
+                                            href="https://www.google.com/maps/dir/?api=1&destination=26.85514580,75.80696200">See
+                                            Location</p></a>
+                                    <p>Restaurant Features</p>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons.flaticon.com/png/512/2801/premium/2801846.png?token=exp=1660243888~hmac=3ab0d611d17ba03bd8a4348049bcb321"
+                                                    alt=""> &nbsp;&nbsp;Home Delivery
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/82/82436.png"
+                                                    alt="">&nbsp;&nbsp;Outdoor
+                                                Seating
+                                            </p>
+        
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons.flaticon.com/png/512/4784/premium/4784068.png?token=exp=1660244136~hmac=3f16d09f35b4f587991a7ae5ed2fe384"
+                                                    alt="">&nbsp;&nbsp;Air Condition
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/3081/3081098.png"
+                                                    alt="">&nbsp;&nbsp;Take Away
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-4">
+        
+        
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/7850/7850613.png"
+                                                    alt="">&nbsp;&nbsp;Pure Veg
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/128/3282/3282468.png"
+                                                    alt="">&nbsp;&nbsp;Kids Allowed
+                                            </p>
+                                        </div>
+                                    </div>
+        
+        
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="row" style="margin: 40px 0;">
+                            <div class="col-sm-3">
+                                <div class="col-bg">
+                                    <img src="images/food/chinesexpress.jpg" alt="" width="100%">
+        
+                                </div>
+        
+                            </div>
+        
+                            <div class="col-sm-9  ">
+                                <div>
+                                    <h2>Chinese X Press</h2>
+                                    <p><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;Adarsh Nagar, Jaipur</p>
+                                    <p><i class="fa-solid fa-database"></i>&nbsp;&nbsp;₹ 500 for two approx | Chinese
+                                    </p>
+                                    <p><i class="fa-solid fa-clock"></i>&nbsp;&nbsp;Open from 12:00 PM - 11:00 PM</p>
+                                    <p><i class="fa-solid fa-location-crosshairs"></i>&nbsp;&nbsp;<a
+                                            style="text-decoration: none;" target="_blank"
+                                            href="https://www.google.com/maps/dir/26.8634705,75.81852/26.9031389,75.8367611/@26.8790035,75.8075158,14z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0">See
+                                            Location</p></a>
+                                    <p>Restaurant Features</p>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons.flaticon.com/png/512/2801/premium/2801846.png?token=exp=1660243888~hmac=3ab0d611d17ba03bd8a4348049bcb321"
+                                                    alt=""> &nbsp;&nbsp;Home Delivery
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/82/82436.png"
+                                                    alt="">&nbsp;&nbsp;Outdoor
+                                                Seating
+                                            </p>
+        
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons.flaticon.com/png/512/4784/premium/4784068.png?token=exp=1660244136~hmac=3f16d09f35b4f587991a7ae5ed2fe384"
+                                                    alt="">&nbsp;&nbsp;Air Condition
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/3081/3081098.png"
+                                                    alt="">&nbsp;&nbsp;Take Away
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-4">
+        
+        
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/7850/7850613.png"
+                                                    alt="">&nbsp;&nbsp;Pure Veg
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/128/3282/3282468.png"
+                                                    alt="">&nbsp;&nbsp;Kids Allowed
+                                            </p>
+                                        </div>
+                                    </div>
+        
+        
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="row" style="margin: 40px 0;">
+                            <div class="col-sm-3">
+                                <div class="col-bg">
+                                    <img src="images/food/chinese and thai.jpg" alt="" width="100%">
+        
+                                </div>
+        
+                            </div>
+        
+                            <div class="col-sm-9  ">
+                                <div>
+                                    <h2>Chinese & Thai Company</h2>
+                                    <p><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;Malviya Nagar, Jaipur</p>
+                                    <p><i class="fa-solid fa-database"></i>&nbsp;&nbsp;₹ 300 for two approx | Multicuisine
+                                    </p>
+                                    <p><i class="fa-solid fa-clock"></i>&nbsp;&nbsp;Open from 12:30 PM - 03:30 PM</p>
+                                    <p><i class="fa-solid fa-location-crosshairs"></i>&nbsp;&nbsp;<a
+                                            style="text-decoration: none;" target="_blank"
+                                            href="https://www.google.com/maps/dir/26.8634705,75.81852/26.8410456,75.8085472/@26.8529203,75.8015631,15z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0">See
+                                            Location</p></a>
+                                    <p>Restaurant Features</p>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons.flaticon.com/png/512/2801/premium/2801846.png?token=exp=1660243888~hmac=3ab0d611d17ba03bd8a4348049bcb321"
+                                                    alt=""> &nbsp;&nbsp;Home Delivery
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/82/82436.png"
+                                                    alt="">&nbsp;&nbsp;Outdoor
+                                                Seating
+                                            </p>
+        
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons.flaticon.com/png/512/4784/premium/4784068.png?token=exp=1660244136~hmac=3f16d09f35b4f587991a7ae5ed2fe384"
+                                                    alt="">&nbsp;&nbsp;Air Condition
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/3081/3081098.png"
+                                                    alt="">&nbsp;&nbsp;Take Away
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-4">
+        
+        
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/7850/7850613.png"
+                                                    alt="">&nbsp;&nbsp;Pure Veg
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/128/3282/3282468.png"
+                                                    alt="">&nbsp;&nbsp;Kids Allowed
+                                            </p>
+                                        </div>
+                                    </div>
+        
+        
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="row" style="margin: 40px 0;">
+                            <div class="col-sm-3">
+                                <div class="col-bg">
+                                    <img src="images/food/dragonchinese.jpg" alt="" width="100%">
+        
+                                </div>
+                            </div>
+        
+                            <div class="col-sm-9  ">
+                                <div>
+                                    <h2>Dragon Chinese Food Corner</h2>
+                                    <p><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;Malviya Nagar, Jaipur</p>
+                                    <p><i class="fa-solid fa-database"></i>&nbsp;&nbsp;₹ 400 for two approx | Chinese</p>
+                                    <p><i class="fa-solid fa-clock"></i>&nbsp;&nbsp;Open from 10:00 AM - 10:30 PM</p>
+                                    <p><i class="fa-solid fa-location-crosshairs"></i>&nbsp;&nbsp;<a
+                                            style="text-decoration: none;" target="_blank"
+                                            href="https://www.google.com/maps/dir/?api=1&destination=26.85336090,75.80689360">See
+                                            Location</p></a>
+                                    <p>Restaurant Features</p>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons.flaticon.com/png/512/2801/premium/2801846.png?token=exp=1660243888~hmac=3ab0d611d17ba03bd8a4348049bcb321"
+                                                    alt=""> &nbsp;&nbsp;Home Delivery
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/82/82436.png"
+                                                    alt="">&nbsp;&nbsp;Outdoor
+                                                Seating
+                                            </p>
+        
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons.flaticon.com/png/512/4784/premium/4784068.png?token=exp=1660244136~hmac=3f16d09f35b4f587991a7ae5ed2fe384"
+                                                    alt="">&nbsp;&nbsp;Air Condition
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/3081/3081098.png"
+                                                    alt="">&nbsp;&nbsp;Take Away
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-4">
+        
+        
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/7850/7850613.png"
+                                                    alt="">&nbsp;&nbsp;Pure Veg
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/128/3282/3282468.png"
+                                                    alt="">&nbsp;&nbsp;Kids Allowed
+                                            </p>
+                                        </div>
+                                    </div>
+        
+        
+                                </div>
+                            </div>
+                        </div>
+        
+        
+                    </div>
+                </div>
+        
+        
+                <div id="continental">
+                    <h2 class="text-center" style="margin: 60px 0  ;">-----Continental Food----- </h2>
+                    <div>
+                        <div class="row" style="margin: 40px 0;">
+                            <div class="col-sm-3">
+                                <div class="col-bg">
+                                    <img src="images/food/cococoffey.png" alt="" width="100%">
+        
+                                </div>
+        
+                            </div>
+        
+                            <div class="col-sm-9  ">
+                                <div>
+                                    <h2>COCO-Coffee & Company</h2>
+                                    <p><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;Bani Park, Jaipur</p>
+                                    <p><i class="fa-solid fa-database"></i>&nbsp;&nbsp;₹ 500 for two approx | Cafe
+                                        Continental</p>
+                                    <p><i class="fa-solid fa-clock"></i>&nbsp;&nbsp;Open from 11:00 AM - 11:00 PM</p>
+                                    <p><i class="fa-solid fa-location-crosshairs"></i>&nbsp;&nbsp;<a
+                                            style="text-decoration: none;" target="_blank"
+                                            href="https://www.google.com/maps/dir//26.926618,75.790233/@26.9265082,75.7200897,12z/data=!3m1!4b1!4m4!4m3!1m1!4e2!1m0">See
+                                            Location</p></a>
+                                    <p>Restaurant Features</p>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons.flaticon.com/png/512/2801/premium/2801846.png?token=exp=1660243888~hmac=3ab0d611d17ba03bd8a4348049bcb321"
+                                                    alt=""> &nbsp;&nbsp;Home Delivery
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/82/82436.png"
+                                                    alt="">&nbsp;&nbsp;Outdoor
+                                                Seating
+                                            </p>
+        
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons.flaticon.com/png/512/4784/premium/4784068.png?token=exp=1660244136~hmac=3f16d09f35b4f587991a7ae5ed2fe384"
+                                                    alt="">&nbsp;&nbsp;Air Condition
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/3081/3081098.png"
+                                                    alt="">&nbsp;&nbsp;Take Away
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-4">
+        
+        
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/7850/7850613.png"
+                                                    alt="">&nbsp;&nbsp;Pure Veg
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/128/3282/3282468.png"
+                                                    alt="">&nbsp;&nbsp;Kids Allowed
+                                            </p>
+                                        </div>
+                                    </div>
+        
+        
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="row" style="margin: 40px 0;">
+                            <div class="col-sm-3">
+                                <div class="col-bg">
+                                    <img src="images/food/clubold.jpeg" alt="" width="100%">
+        
+                                </div>
+        
+                            </div>
+        
+                            <div class="col-sm-9  ">
+                                <div>
+                                    <h2>Club Old Barrel</h2>
+                                    <p><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;Sodala, Jaipur</p>
+                                    <p><i class="fa-solid fa-database"></i>&nbsp;&nbsp;₹ 1000 for two approx | Chinese
+                                        Italian
+                                    </p>
+                                    <p><i class="fa-solid fa-clock"></i>&nbsp;&nbsp;Open from 12:00 PM - 11:00 PM</p>
+                                    <p><i class="fa-solid fa-location-crosshairs"></i>&nbsp;&nbsp;<a
+                                            style="text-decoration: none;" target="_blank"
+                                            href="https://www.google.com/maps/dir//26.8863275,75.7677317/@26.8862939,75.6977071,12z/data=!3m1!4b1!4m4!4m3!1m1!4e2!1m0">See
+                                            Location</p></a>
+                                    <p>Restaurant Features</p>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons.flaticon.com/png/512/2801/premium/2801846.png?token=exp=1660243888~hmac=3ab0d611d17ba03bd8a4348049bcb321"
+                                                    alt=""> &nbsp;&nbsp;Home Delivery
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/82/82436.png"
+                                                    alt="">&nbsp;&nbsp;Outdoor
+                                                Seating
+                                            </p>
+        
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons.flaticon.com/png/512/4784/premium/4784068.png?token=exp=1660244136~hmac=3f16d09f35b4f587991a7ae5ed2fe384"
+                                                    alt="">&nbsp;&nbsp;Air Condition
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/3081/3081098.png"
+                                                    alt="">&nbsp;&nbsp;Take Away
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-4">
+        
+        
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/7850/7850613.png"
+                                                    alt="">&nbsp;&nbsp;Pure Veg
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/128/3282/3282468.png"
+                                                    alt="">&nbsp;&nbsp;Kids Allowed
+                                            </p>
+                                        </div>
+                                    </div>
+        
+        
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="row" style="margin: 40px 0;">
+                            <div class="col-sm-3">
+                                <div class="col-bg">
+                                    <img src="images/food/assamica.jpeg" alt="" width="100%">
+        
+                                </div>
+        
+                            </div>
+        
+                            <div class="col-sm-9  ">
+                                <div>
+                                    <h2>Assamica</h2>
+                                    <p><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;Ashok Nagar</p>
+                                    <p><i class="fa-solid fa-database"></i>&nbsp;&nbsp;₹ 800 for two approx | European Pizza
+                                        Pasta Continent...</p>
+                                    <p><i class="fa-solid fa-clock"></i>&nbsp;&nbsp;Open from 10:30 PM - 11:00 PM</p>
+                                    <p><i class="fa-solid fa-location-crosshairs"></i>&nbsp;&nbsp;<a
+                                            style="text-decoration: none;" target="_blank"
+                                            href="https://www.google.com/maps/dir/?api=1&destination=26.90515100,75.79536700">See
+                                            Location</p></a>
+                                    <p>Restaurant Features</p>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons.flaticon.com/png/512/2801/premium/2801846.png?token=exp=1660243888~hmac=3ab0d611d17ba03bd8a4348049bcb321"
+                                                    alt=""> &nbsp;&nbsp;Home Delivery
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/82/82436.png"
+                                                    alt="">&nbsp;&nbsp;Outdoor
+                                                Seating
+                                            </p>
+        
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons.flaticon.com/png/512/4784/premium/4784068.png?token=exp=1660244136~hmac=3f16d09f35b4f587991a7ae5ed2fe384"
+                                                    alt="">&nbsp;&nbsp;Air Condition
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/3081/3081098.png"
+                                                    alt="">&nbsp;&nbsp;Take Away
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-4">
+        
+        
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/7850/7850613.png"
+                                                    alt="">&nbsp;&nbsp;Pure Veg
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/128/3282/3282468.png"
+                                                    alt="">&nbsp;&nbsp;Kids Allowed
+                                            </p>
+                                        </div>
+                                    </div>
+        
+        
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="row" style="margin: 40px 0;">
+                            <div class="col-sm-3">
+                                <div class="col-bg">
+                                    <img src="images/food/sensi.jpeg" alt="" width="100%">
+        
+                                </div>
+                            </div>
+        
+                            <div class="col-sm-9  ">
+                                <div>
+                                    <h2>Sensi</h2>
+                                    <p><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;Clarion Inn Jaipur</p>
+                                    <p><i class="fa-solid fa-database"></i>&nbsp;&nbsp;₹ 1500 for two approx | Chinese North
+                                    </p>
+                                    <p><i class="fa-solid fa-clock"></i>&nbsp;&nbsp;Open from 7:00 AM - 10:30 PM</p>
+                                    <p><i class="fa-solid fa-location-crosshairs"></i>&nbsp;&nbsp;<a
+                                            style="text-decoration: none;" target="_blank"
+                                            href="https://www.google.com/maps/dir/?api=1&destination=27.03001800,75.89185200">See
+                                            Location</p></a>
+                                    <p>Restaurant Features</p>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons.flaticon.com/png/512/2801/premium/2801846.png?token=exp=1660243888~hmac=3ab0d611d17ba03bd8a4348049bcb321"
+                                                    alt=""> &nbsp;&nbsp;Home Delivery
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/82/82436.png"
+                                                    alt="">&nbsp;&nbsp;Outdoor
+                                                Seating
+                                            </p>
+        
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons.flaticon.com/png/512/4784/premium/4784068.png?token=exp=1660244136~hmac=3f16d09f35b4f587991a7ae5ed2fe384"
+                                                    alt="">&nbsp;&nbsp;Air Condition
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/3081/3081098.png"
+                                                    alt="">&nbsp;&nbsp;Take Away
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-4">
+        
+        
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/512/7850/7850613.png"
+                                                    alt="">&nbsp;&nbsp;Pure Veg
+                                            </p>
+                                            <p><img style="width: 25px;"
+                                                    src="https://cdn-icons-png.flaticon.com/128/3282/3282468.png"
+                                                    alt="">&nbsp;&nbsp;Kids Allowed
+                                            </p>
+                                        </div>
+                                    </div>
+        
+        
+                                </div>
+                            </div>
+                        </div>
+        
+        
+                    </div>
+                </div>
+        
+        
+        
+            </div>
+        </div>
+
+
+        <div>
+        
+            <footer class="text-center text-lg-start  pt-2" style="background-color: #ffeef1;">
+        
+                <div class="container text-center text-md-start mt-5">
+        
+                    <div class="row mt-3">
+        
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+        
+                            <h4 class="text-uppercase fw-bold">Know</h4>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <a href="/" class="nav-link">
+                                <p>Homepage</p>
+                            </a>
+                            <a href="/aboutjaipur.html" class="nav-link">
+                                <p>About Jaipur</p>
+                            </a>
+                            <a href="/gallery.html" class="nav-link">
+                                <p>Photo Gallery</p>
+                            </a>
+                            <a href="/review.html" class="nav-link">
+                                <p>Guest Reviews</p>
+                            </a>
+                            <a href="/contact.html" class="nav-link">
+                                <p>Contact Us</p>
+                            </a>
+        
+                        </div>
+        
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <h4 class="text-uppercase fw-bold">Discover</h4>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <a href="/amer.html" class="nav-link">
+                                <p>Amer Fort</p>
+                            </a>
+                            <a href="/hawamahal.html" class="nav-link">
+                                <p>Hawa Mahal</p>
+                            </a>
+                            <a href="/jalmahal.html" class="nav-link">
+                                <p>Jal Mahal</p>
+                            </a>
+                            <a href="/citypalace.html" class="nav-link">
+                                <p>City Palace</p>
+                            </a>
+                            <a href="/nahargarh.html" class="nav-link">
+                                <p>Nahargarh Fort</p>
+                            </a>
+                            <a href="/alberthall.html" class="nav-link">
+                                <p>Albert Hall Museum</p>
+                            </a>
+        
+                        </div>
+        
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <h4 class="text-uppercase fw-bold">Contact</h4>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p><i class="fas fa-home mr-3"></i> Jaipur,Rajasthan 302017,IN</p>
+                            <p><i class="fas fa-envelope mr-3"></i> rahul@gmail.com</p>
+                            <p><i class="fas fa-phone mr-3"></i> + 01 364 576 54</p>
+                            <p><i class="fas fa-print mr-3"></i> + 01 745 634 89</p>
+                            <p><i class="fas fa-mobile mr-3"></i> + 91 6367740436</p>
+                        </div>
+        
+                    </div>
+        
+                    <div class="text-center p-3">
+                        Jaipur-Ghumo © 2022 Copyright:
+                        Rahul Goyal
+                    </div>
+        
+                </div>
+        
+        
+        </div>
+
+
+</body>

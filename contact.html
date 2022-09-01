@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Jaipur-Ghumo</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    
+        @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+    
+        #contact {
+            background-color: #6a9ac4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .contact-box {
+            width: clamp(100px, 90%, 1000px);
+            margin: 80px 50px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+        .contact-links,
+        .contact-form-wrapper {
+            width: 50%;
+            padding: 8% 5% 10% 5%;
+        }
+    
+    
+        .contact-links {
+            background-color: #1f2e43;
+            background:
+                radial-gradient(circle at 55% 92%, #426691 0 12%, transparent 12.2%),
+                radial-gradient(circle at 94% 72%, #426691 0 10%, transparent 10.2%),
+                radial-gradient(circle at 20% max(78%, 350px), #263a53 0 7%, transparent 7.2%),
+                radial-gradient(circle at 0% 0%, #263a53 0 40%, transparent 40.2%),
+                #1f2e43;
+            border-radius: 10px 0 0 10px;
+        }
+    
+        .contact-form-wrapper {
+            background-color: #ffffff8f;
+            border-radius: 0 10px 10px 0;
+        }
+    
+        @media only screen and (max-width: 800px) {
+    
+            .contact-links,
+            .contact-form-wrapper {
+                width: 100%;
+            }
+    
+            .contact-links {
+                border-radius: 10px 10px 0 0;
+            }
+    
+            .contact-form-wrapper {
+                border-radius: 0 0 10px 10px;
+            }
+        }
+    
+        @media only screen and (max-width: 400px) {
+            .contact-box {
+                width: 95%;
+                margin: 8% 5%;
+            }
+        }
+    
+        h2 {
+            font-family: 'Arimo', sans-serif;
+            color: #fff;
+            font-size: clamp(30px, 6vw, 60px);
+            letter-spacing: 2px;
+            text-align: center;
+            transform: scale(.95, 1);
+        }
+    
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding-top: 50px;
+        }
+    
+        .link {
+            margin: 10px;
+            cursor: pointer;
+        }
+    
+        img {
+            width: 45px;
+            height: 45px;
+            filter:
+                hue-rotate(220deg) drop-shadow(2px 4px 4px #0006);
+            transition: 0.2s;
+            user-select: none;
+        }
+    
+        img:hover {
+            transform: scale(1.1, 1.1);
+        }
+    
+        img:active {
+            transform: scale(1.1, 1.1);
+            filter:
+                hue-rotate(220deg) drop-shadow(2px 4px 4px #222) sepia(0.3);
+        }
+    
+        .form-item {
+            position: relative;
+        }
+    
+        label,
+        input,
+        textarea {
+            font-family: 'Poppins', sans-serif;
+        }
+    
+        label {
+            position: absolute;
+            top: 10px;
+            left: 2%;
+            color: #999;
+            font-size: clamp(14px, 1.5vw, 18px);
+            pointer-events: none;
+            user-select: none;
+        }
+    
+        input,
+        textarea {
+            width: 100%;
+            outline: 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            padding: 12px;
+            font-size: clamp(15px, 1.5vw, 18px);
+        }
+    
+        input:focus+label,
+        input:valid+label,
+        textarea:focus+label,
+        textarea:valid+label {
+            font-size: clamp(13px, 1.3vw, 16px);
+            color: #777;
+            top: -20px;
+            transition: all .225s ease;
+        }
+    
+        .submit-btn {
+            background-color: #fd917e;
+            filter: drop-shadow(2px 2px 3px #0003);
+            color: #fff;
+            font-family: "Poppins", sans-serif;
+            font-size: clamp(16px, 1.6vw, 18px);
+            display: block;
+            padding: 12px 20px;
+            margin: 2px auto;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            user-select: none;
+            transition: 0.2s;
+        }
+    
+        .submit-btn:hover {
+            transform: scale(1.1, 1.1);
+        }
+    
+        .submit-btn:active {
+            transform: scale(1.1, 1.1);
+            filter: sepia(0.5);
+        }
+    
+        @media only screen and (max-width: 800px) {
+            h2 {
+                font-size: clamp(40px, 10vw, 60px);
+            }
+        }
+    
+        @media only screen and (max-width: 400px) {
+            h2 {
+                font-size: clamp(30px, 12vw, 60px);
+            }
+    
+            .links {
+                padding-top: 30px;
+            }
+    
+            img {
+                width: 38px;
+                height: 38px;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark py-4">
+
+        <div class="container">
+            <a href="/"><img src="images/logo.webp" alt="" style="height: 50px; width: 50px; border-radius: 50%;"></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link active px-4 text-secondary " aria-current="page" href="/">Home</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link  px-3 text-white " aria-current="page" href="aboutjaipur.html">About
+                            Jaipur</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link  px-3 text-white " aria-current="page" href="gallery.html">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link  px-3 text-white " aria-current="page" href="review.html">Guest Reviews</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link  px-3 text-white " aria-current="page" href="/contact.html">Contact Us</a>
+                    </li>
+                </ul>
+
+            </div>
+
+
+        </div>
+    </nav>
+
+    <div class="" style=" background-color: #FEF6E4; color: black; font-weight: 600;  padding: 20px 0; ">
+        <p class=" text-center " style="font-size: 36px;"> Contact Us </p>
+    
+    
+    
+    
+    
+        <div class=" container ">
+    
+            <div class=" " style="margin: 30px 0; padding: 30px 0;">
+    
+                <section id="contact">
+                    <div class="contact-box">
+                        <div class="contact-links">
+                            <h2>CONTACT</h2>
+                            <div class="links">
+                                <div class="link">
+                                    <a><img src="https://i.postimg.cc/m2mg2Hjm/linkedin.png" alt="linkedin"></a>
+                                </div>
+                                <div class="link">
+                                    <a><img src="https://i.postimg.cc/YCV2QBJg/github.png" alt="github"></a>
+                                </div>
+                                <div class="link">
+                                    <a><img src="https://i.postimg.cc/W4Znvrry/codepen.png" alt="codepen"></a>
+                                </div>
+                                <div class="link">
+                                    <a><img src="https://i.postimg.cc/NjLfyjPB/email.png" alt="email"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-form-wrapper">
+                            <form>
+                                <div class="form-item">
+                                    <input type="text" name="sender" required>
+                                    <label>Name:</label>
+                                </div>
+                                <div class="form-item">
+                                    <input type="text" name="email" required>
+                                    <label>Email:</label>
+                                </div>
+                                <div class="form-item">
+                                    <textarea class="" name="message" required></textarea>
+                                    <label>Message:</label>
+                                </div>
+                                <button class="submit-btn">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+    
+    
+    
+    
+    
+            </div>
+        </div>
+
+
+        <div>
+        
+            <footer class="text-center text-lg-start  pt-2" style="background-color: #ffeef1;">
+        
+                <div class="container text-center text-md-start mt-5">
+        
+                    <div class="row mt-3">
+        
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+        
+                            <h4 class="text-uppercase fw-bold">Know</h4>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <a href="/" class="nav-link">
+                                <p>Homepage</p>
+                            </a>
+                            <a href="/aboutjaipur.html" class="nav-link">
+                                <p>About Jaipur</p>
+                            </a>
+                            <a href="/gallery.html" class="nav-link">
+                                <p>Photo Gallery</p>
+                            </a>
+                            <a href="/review.html" class="nav-link">
+                                <p>Guest Reviews</p>
+                            </a>
+                            <a href="/contact.html" class="nav-link">
+                                <p>Contact Us</p>
+                            </a>
+        
+                        </div>
+        
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <h4 class="text-uppercase fw-bold">Discover</h4>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <a href="/amer.html" class="nav-link">
+                                <p>Amer Fort</p>
+                            </a>
+                            <a href="/hawamahal.html" class="nav-link">
+                                <p>Hawa Mahal</p>
+                            </a>
+                            <a href="/jalmahal.html" class="nav-link">
+                                <p>Jal Mahal</p>
+                            </a>
+                            <a href="/citypalace.html" class="nav-link">
+                                <p>City Palace</p>
+                            </a>
+                            <a href="/nahargarh.html" class="nav-link">
+                                <p>Nahargarh Fort</p>
+                            </a>
+                            <a href="/alberthall.html" class="nav-link">
+                                <p>Albert Hall Museum</p>
+                            </a>
+        
+                        </div>
+        
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <h4 class="text-uppercase fw-bold">Contact</h4>
+                            <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                                style="width: 60px; background-color: #7c4dff; height: 2px" />
+                            <p><i class="fas fa-home mr-3"></i> Jaipur,Rajasthan 302017,IN</p>
+                            <p><i class="fas fa-envelope mr-3"></i> rahul@gmail.com</p>
+                            <p><i class="fas fa-phone mr-3"></i> + 01 364 576 54</p>
+                            <p><i class="fas fa-print mr-3"></i> + 01 745 634 89</p>
+                            <p><i class="fas fa-mobile mr-3"></i> + 91 6367740436</p>
+                        </div>
+        
+                    </div>
+        
+                    <div class="text-center p-3">
+                        Jaipur-Ghumo © 2022 Copyright:
+                        Rahul Goyal
+                    </div>
+        
+                </div>
+        
+        
+        </div>
+
+
+</body>
